@@ -18,20 +18,13 @@ window = sg.Window('Window Title', layout)
 ###########################################
 
 def Cramer(x1, y1, x2, y2, b1, b2):
-    print(x1, y1, x2, y2, b1, b2)
     #licze wyznacznik A:
 
     detA = (x1 * y2) - (y1 * x2)
 
-    print(detA)
-
     Dx = (b1 * y2) - (b2 * y1)
 
-    print(Dx)
-
     Dy = (x1 * b2) - (x2 * b1)
-
-    print(Dy)
 
     x = Dx // detA
     y = Dy // detA
